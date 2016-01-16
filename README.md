@@ -19,13 +19,13 @@ import Form from 'reacted-form';
 
 class MyComponent extends React.Component {
 
-  submitHandler (e) {
-
+  submitHandler (e, values) {
+    myLoginFunction(values.email, values.password):
   }
 
   render () {
     return (
-      <Form name="login">
+      <Form name="login" onSubmit={ this.submitHandler.bind(this) }>
         <input
           type          =   "email"
           placeholder   =   "Your email"
