@@ -25,7 +25,7 @@ class MyComponent extends React.Component {
 
   render () {
     return (
-      <Form name="login" onSubmit={ this.submitHandler.bind(this) }>
+      <Form onSubmit={ this.submitHandler.bind(this) }>
         <input
           type          =   "email"
           placeholder   =   "Your email"
