@@ -15,7 +15,7 @@ Import form from one of your controller:
 
 ```js
 import React from 'react';
-import Form from 'reacted-form';
+import { Form, Email, Password } from 'reacted-form';
 
 class MyComponent extends React.Component {
 
@@ -26,14 +26,12 @@ class MyComponent extends React.Component {
   render () {
     return (
       <Form onSubmit={ this.submitHandler.bind(this) }>
-        <input
-          type          =   "email"
+        <Email
           placeholder   =   "Your email"
           name          =   "email"
           required
         />
-        <input
-          type          =   "password"
+        <Password
           placeholder   =   "Your password"
           name          =   "password"
           required
